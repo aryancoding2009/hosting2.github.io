@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME - ASRP</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: cursive;
+        }
+        .opguys{
+            height: 110px;
+            width: 110px;
+        }
+        .header{
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(backgrounhome.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            position: relative;
+        }
+        nav img{
+            width: 150px;
+        }
+        .nav-links{
+            flex: 1;
+            text-align: right;
+        }
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        .nav-links ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .nav-links ul li a::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        .nav-links ul li a:hover::after{
+            width: 100%;
+        }
+        .text-box{
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .text-box h1{
+            font-size: 32px;
+        }
+        .text-box p{
+            margin: 10px 0 40px;
+            font-size: 14px;
+            color: #fff;
+        }
+        .hero-btn{
+             display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        .hero-btn:hover{
+            border: 1px solid #f44336;
+            background: #f44336;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="home.html"><img src="card%20transparent.png" class="opguys"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about%20us.html">ABOUT US</a></li>
+                    <li><a href="services.html">OUR EXPERTISE</a></li>
+                    <li><a href="Contact-Form-HTML-CSS-master/index.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>ASRP INFRA PROJECTS (OPC) PRIVATE LIMITED</h1>
+            <p>MECHANICAL AND CIVIL CONSTRUCTION WORKS.</p>
+            <a href="Contact-Form-HTML-CSS-master/index.html" class="hero-btn">CONTACT US</a>
+        </div>
+    </section>
+</body>
+</html>
